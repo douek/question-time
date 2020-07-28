@@ -1,2 +1,2 @@
 # question-time
-TODO: update readme :relaxed:
+TODO: write a readme :relaxed:
