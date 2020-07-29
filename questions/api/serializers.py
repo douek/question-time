@@ -10,7 +10,7 @@ class QuestionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Question
-        exculde = ['updated_at']
+        exclude = ['updated_at']
         
     def get_created_at(self, instance):
         return instance.created_at.strftime('%B %d %Y')
