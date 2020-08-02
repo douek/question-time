@@ -17,15 +17,15 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 from django_registration.backends.one_step.views import RegistrationView
 from core.views import IndexTemplateView
-from users.forms import CustomUserForm
+from users.forms import MyCustomUserForm
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/registration/', RegistrationView.as_view(
-        form_class=CustomUserForm,
+    path('accounts/register/', RegistrationView.as_view(
+        form_class=MyCustomUserForm,
         success_url="/"), name='django_registration_register'),
-    path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('django_registration.backends.one_step.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
     path('api-auth/', include('rest_framework.urls')),
     path('api/', include('users.api.urls')),
     path('api/', include('questions.api.urls')),

@@ -3,7 +3,20 @@
     <head>
         <title> Question Time </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap" rel="stylesheet">
         <style>
+            html,body{
+                height: 100%;
+                font-family: "Arima Madurai"; 
+            }
+            .auth-box{
+                border: 3px solid lightgray;
+                border-radius: 10px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                width: 600px;
+                margin: auto;
+            }
             .login-form-container {
                 width: 300px;
                 margin: auto;
@@ -12,12 +25,17 @@
                 width: 400px;
                 margin: auto;
             }
+            .box_top{
+                margin-top: 100px;
+            }
         </style>
     </head>
     <body>
-        <div class="auth-box text-center">
-            {% block content%}
-            {% endblock %}
+        <div class="box_top">
+            <div class="auth-box text-center">
+                {% block content%}
+                {% endblock %}
+            </div>
         </div>
     </body>
 </html>
