@@ -1,20 +1,42 @@
 <template>
 <div class="container">
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Question Time" />
+    <div v-for="question in questions" :key="question.pk">
+      <p class="mb-0"> Posted by <span class="author-name">{{ question.author }}</span></p>
+      <h2>{{ question.content }}</h2>
+      <p>Answers: {{ question.answers_count }}</p>
+      <hr>
+    </div>
   </div>
 </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import { apiService } from '../common/api_service'
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld
+  data() {
+    return {questions:[]}
+  },
+  methods: {
+    getQuestions() {
+      let endpoint = 'api/questions/'
+
+      apiService(endpoint).then(data => {
+        this.questions.push(...data.results)
+      })
+    }
+  },
+  created(){
+    this.getQuestions()
   }
 };
 </script>
+
+<style scoped>
+.author-name{
+  font-weight: bold;
+  color: lightcoral;
+}
+</style>
