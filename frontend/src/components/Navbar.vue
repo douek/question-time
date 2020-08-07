@@ -12,7 +12,7 @@
         <router-link class="nav-link" :to="{name: 'home'}">Home</router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" :to="{name: 'about'}">New Question</router-link>
+        <router-link class="nav-link" :to="{name: 'ask'}">Ask Question</router-link>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/accounts/logout/">Logout</a>
@@ -37,6 +37,6 @@ export default {
 }
 
 .navbar-brand:hover{
-    color:palevioletred;
+    color:crimson;
 }
 </style>

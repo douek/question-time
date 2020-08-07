@@ -3,7 +3,9 @@
   <div class="home">
     <div v-for="question in questions" :key="question.pk">
       <p class="mb-0"> Posted by <span class="author-name">{{ question.author }}</span></p>
-      <h2>{{ question.content }}</h2>
+      <router-link class="question-link" :to="{ name: 'question', params: {slug: question.slug} }">
+        {{ question.content }}
+      </router-link>
       <p>Answers: {{ question.answers_count }}</p>
       <hr>
     </div>
@@ -29,6 +31,7 @@ export default {
     }
   },
   created(){
+    document.title = 'QuestionTime'
     this.getQuestions()
   }
 };
@@ -38,5 +41,14 @@ export default {
 .author-name{
   font-weight: bold;
   color: lightcoral;
+}
+
+.question-link {
+  font-weight: bold;
+  color: black;
+}
+.question-link:hover{
+  color: crimson;
+  text-decoration: none;
 }
 </style>
