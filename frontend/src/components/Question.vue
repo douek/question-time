@@ -11,7 +11,7 @@
         </div>
         <div class="container">
             <div v-if="userHasAnswered">
-                <p class="answer-added">You Submmited an Answer</p>
+                <p class="answer-added">{{ username }}, you submmited an answer</p>
             </div>
             <div v-else-if="showForm">
                 <form @submit.prevent="onASubmitAnswer" class="crad">
@@ -35,22 +35,28 @@
             </div>
         </div>
         <div class="container">
-            <Answer v-for="(answer, index) in answers" :key="index" :answer="answer"></Answer>
-                    <div class="my-4">
-            <p v-show="loadingQuestions">...Loading...</p>
-            <button
-                v-show="next"
-                @click="getQuestionAnswer"
-                class="btn btn-sm btn-outline-secondary"
-            >Load more</button>
-        </div>
+            <Answer
+                v-for="(answer, index) in answers"
+                :key="index"
+                :answer="answer"
+                :currentUser="username"
+                @delete-answer="deleteAnswer"
+            ></Answer>
+            <div class="my-4">
+                <p v-show="loadingAnswers">...Loading...</p>
+                <button
+                    v-show="next"
+                    @click="getQuestionAnswer"
+                    class="btn btn-sm btn-outline-secondary"
+                >Load more</button>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 import { apiService } from "../common/api_service";
-import Answer from "../components/Answer"
+import Answer from "../components/Answer";
 
 export default {
     name: "Question",
@@ -64,63 +70,77 @@ export default {
         Answer
     },
     data() {
-        return { 
+        return {
             question: {},
             answers: [],
-            answerBody:null,
+            answerBody: null,
             error: null,
             userHasAnswered: false,
             showForm: false,
-            next:null,
+            next: null,
             loadingAnswers: false,
-         }
+            username: null
+        };
     },
     methods: {
         setTitle(title) {
-            document.title = title
+            document.title = title;
         },
         getQuestion() {
             const endpoint = `/api/questions/${this.slug}/`;
             apiService(endpoint).then(data => {
-                this.question = data
-                this.userHasAnswered = data.user_has_answered
-                this.setTitle(data.content)
+                this.question = data;
+                this.userHasAnswered = data.user_has_answered;
+                this.setTitle(data.content);
             });
         },
         getQuestionAnswer() {
             let endpoint = `/api/questions/${this.slug}/answers/`;
-            if (this.next){
-                endpoint = this.next
+            if (this.next) {
+                endpoint = this.next;
             }
             apiService(endpoint).then(data => {
-                this.answers.push(...data.results)
-                if(data.next) {
-                    this.next = data.next
+                this.answers.push(...data.results);
+                if (data.next) {
+                    this.next = data.next;
                 } else {
-                    this.next = null
+                    this.next = null;
                 }
             });
         },
-        onASubmitAnswer(){
-            this.loadingAnswers = true
-            if (this.answerBody){
-                const endpoint = `/api/questions/${this.slug}/answer/`
-                apiService(endpoint, 'POST', {body:this.answerBody}).then(data => {
-                this.answers.unshift(data)
-            })
-            this.userHasAnswered = true
-            this.showForm = false
-            this.error = false
-            this.answerBody = null
+        onASubmitAnswer() {
+            this.loadingAnswers = true;
+            if (this.answerBody) {
+                const endpoint = `/api/questions/${this.slug}/answer/`;
+                apiService(endpoint, "POST", { body: this.answerBody }).then(
+                    data => {
+                        this.answers.unshift(data);
+                    }
+                );
+                this.userHasAnswered = true;
+                this.showForm = false;
+                this.error = false;
+                this.answerBody = null;
             } else {
-                this.error = 'Empty answer is not cool'
+                this.error = "Empty answer is not cool";
             }
-            this.loadingAnswers = false
-        }
+            this.loadingAnswers = false;
+        },
+        async deleteAnswer(answer) {
+            const endpoint = `/api/answers/${answer.id}/`
+            try{
+                await apiService(endpoint, 'DELETE')
+                this.$delete(this.answers, this.answers.indexOf(answer))
+                this.userHasAnswered = false
+            } catch(err) {
+                console.log(err)
+            }
+        },
     },
     created() {
-        this.getQuestion()
-        this.getQuestionAnswer()
+        this.getQuestion();
+        this.getQuestionAnswer();
+        this.username = window.localStorage.getItem("username");
     }
 };
 </script>
