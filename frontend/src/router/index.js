@@ -2,7 +2,8 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Question from "../components/Question";
-import QuestionEditor from "../components/QuestionEditor";
+import QuestionEditor from "../views/QuestionEditor";
+import AnswerEditor from "../views/AnswerEditor";
 
 Vue.use(VueRouter);
 
@@ -22,7 +23,13 @@ const routes = [
     name: "question",
     component: Question,
     props: true
-  }
+  },
+  {
+    path: "/answer/:id",
+    name: "answer-editor",
+    component: AnswerEditor,
+    props: true
+  },
 ];
 
 const router = new VueRouter({
