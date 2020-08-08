@@ -17,22 +17,15 @@ export default {
     name: 'AnswerEditor',
     props: {
         id : {
-            type: Number,
-            required: true
-        },
-        prevAnswer: {
             type: String,
             required: true
         },
-        questionSlug: {
-            type: String,
-            required: true
-        }
     },
     data() {
         return {
-            answer: this.prevAnswer,
+            answer:null,
             err: null,
+            questionSlug:null,
         }
     },
     methods: {
@@ -54,9 +47,10 @@ export default {
     async beforeRouteEnter(to,from,next){
         const endpiont = `/api/answers/${to.params.id}/`
         const data = await apiService(endpiont)
-        to.params.prevAnswer = data.body
-        to.params.questionSlug = data.question_slug
-        return next()
+        return next(vm => (
+            vm.answer = data.body,
+            vm.questionSlug = data.question_slug
+        ))
     }
 }
 </script>
