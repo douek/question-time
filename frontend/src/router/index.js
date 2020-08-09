@@ -4,6 +4,7 @@ import Home from "../views/Home.vue";
 import Question from "../components/Question";
 import QuestionEditor from "../views/QuestionEditor";
 import AnswerEditor from "../views/AnswerEditor";
+import NotFound from "../views/NotFound"
 
 Vue.use(VueRouter);
 
@@ -32,6 +33,11 @@ const routes = [
     component: AnswerEditor,
     props: true
   },
+  {
+    path: "*",
+    name: "page-not-found",
+    component: NotFound
+  }
 ];
 
 const router = new VueRouter({

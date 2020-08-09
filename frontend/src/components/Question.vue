@@ -97,9 +97,13 @@ export default {
         getQuestion() {
             const endpoint = `/api/questions/${this.slug}/`;
             apiService(endpoint).then(data => {
+                if (data){
                 this.question = data;
                 this.userHasAnswered = data.user_has_answered;
                 this.setTitle(data.content);
+                } else {
+                    this.$router.push('/notfound/')
+                }
             });
         },
         getQuestionAnswer() {
