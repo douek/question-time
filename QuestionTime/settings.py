@@ -137,6 +137,11 @@ LOGOUT_REDIRECT_URL = '/'
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'assets'),
+    os.path.join(BASE_DIR, 'frontend/dist')
+]
+# STATIC_ROOT = # The absolute path to the directory where collectstatic will collect static files for deployment.
 
 # Custom User model
 AUTH_USER_MODEL ='users.customUser'
