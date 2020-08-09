@@ -39,7 +39,7 @@ export default {
                         params: { slug: this.questionSlug },             
                     })
                 })
-            }else {
+            } else {
                 this.err = 'no empty answers please'
             }
         },

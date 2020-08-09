@@ -14,11 +14,13 @@ const routes = [
     component: Home
   },
   {
-    path: "/ask",
+    path: "/ask/:slug?",
     name: "ask",
-    component: QuestionEditor
+    component: QuestionEditor,
+    props: true
   },
   {
+    /// the ? sign makes the slug parameter optional
     path: "/question/:slug",
     name: "question",
     component: Question,

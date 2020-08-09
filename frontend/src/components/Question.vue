@@ -2,6 +2,7 @@
     <div class="single-question mt-2">
         <div class="container">
             <h1>{{ question.content }}</h1>
+            <QuestionActions v-if="isQuestionAuthor" :slug="question.slug" />
             <p class="mb-0">
                 Posted by
                 <span class="author-name">{{ question.author }}</span>
@@ -57,6 +58,7 @@
 <script>
 import { apiService } from "../common/api_service";
 import Answer from "../components/Answer";
+import QuestionActions from "../components/QuestionActions";
 
 export default {
     name: "Question",
@@ -67,7 +69,8 @@ export default {
         }
     },
     components: {
-        Answer
+        Answer,
+        QuestionActions
     },
     data() {
         return {
@@ -81,6 +84,11 @@ export default {
             loadingAnswers: false,
             username: null
         };
+    },
+    computed: {
+        isQuestionAuthor() {
+            return this.username === this.question.author;
+        }
     },
     methods: {
         setTitle(title) {
@@ -127,15 +135,15 @@ export default {
             this.loadingAnswers = false;
         },
         async deleteAnswer(answer) {
-            const endpoint = `/api/answers/${answer.id}/`
-            try{
-                await apiService(endpoint, 'DELETE')
-                this.$delete(this.answers, this.answers.indexOf(answer))
-                this.userHasAnswered = false
-            } catch(err) {
-                console.log(err)
+            const endpoint = `/api/answers/${answer.id}/`;
+            try {
+                await apiService(endpoint, "DELETE");
+                this.$delete(this.answers, this.answers.indexOf(answer));
+                this.userHasAnswered = false;
+            } catch (err) {
+                console.log(err);
             }
-        },
+        }
     },
     created() {
         this.getQuestion();
