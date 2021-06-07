@@ -1,0 +1,72 @@
+{
+    "id": "h2hypcQMACn2kfjyzxI3",
+    "name": "New Doc",
+    "content": [
+        {
+            "type": "text",
+            "text": "Text\n\n![](https://firebasestorage.googleapis.com/v0/b/swimm-dev-content/o/repositories%2FU0sVB7lC9at5XPOW1TBW%2Fdecc04ca-c90c-4077-b03f-811444338896.png?alt=media&token=2a188fff-1a9b-4dea-9d15-ead61e57beac)"
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                " {% block auth %}",
+                " <h1>QuestionTime</h1>",
+                " <p class=\"lead text-muted\">Q and A</p>",
+                "*<div class=\"login-form-container\">",
+                "*    <form method=\"POST\">",
+                "*        {% csrf_token %}",
+                "*        {{ form|crispy }}",
+                "*        <button type=\"submit\" class=\"btn btn-sm btn-outline-primary\">Login</button>",
+                "*    </form>",
+                "*    <p class=\"mt-2\">Or <a href=\"{% url 'django_registration_register' %}\">Create an Account</a></p>",
+                "*</div>",
+                " ",
+                " {% endblock %}"
+            ],
+            "firstLineNumber": 4,
+            "path": "templates/registration/login.html",
+            "comments": []
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                "         {% block style %}",
+                "         {% endblock %}",
+                "     </head>",
+                "*    <body>",
+                "*        {% block content%}",
+                "*        {% endblock %}",
+                "*        {% block js%}",
+                "*        {% endblock %}",
+                "*    </body>",
+                " </html>"
+            ],
+            "firstLineNumber": 7,
+            "path": "templates/base.html",
+            "comments": []
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                "*from django.contrib import admin",
+                "*from .models import Question, Answer",
+                "*",
+                "*admin.site.register(Question)",
+                "*admin.site.register(Answer)"
+            ],
+            "firstLineNumber": 1,
+            "path": "questions/admin.py",
+            "comments": []
+        }
+    ],
+    "symbols": {},
+    "file_version": "2.0.1",
+    "meta": {
+        "app_version": "0.4.7-0",
+        "file_blobs": {
+            "templates/registration/login.html": "74aff3fff843f36daa070eb4c29ec9a0c6d6126e",
+            "templates/base.html": "916cef285db9779e8ed9f9bbc994c55bb0299c69",
+            "questions/admin.py": "e1a7321773762e8885baa81fcdc7affd3f23c83c"
+        }
+    }
+}
