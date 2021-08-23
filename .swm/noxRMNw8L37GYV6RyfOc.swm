@@ -35,29 +35,6 @@
             "text": "ede\n\n[[sym-text:execute_from_command_line(cebef847-d844-4110-a0d5-931040f45455)]] eff\n\ne"
         },
         {
-            "type": "snippet",
-            "lines": [
-                "     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'QuestionTime.settings')",
-                "     try:",
-                "         from django.core.management import execute_from_command_line",
-                "*    except ImportError as exc:",
-                "*        raise ImportError(",
-                "*            \"Couldn't import Django. Are you sure it's installed and \"",
-                "*            \"available on your PYTHONPATH environment variable? Did you \"",
-                "*            \"forget to activate a virtual environment?\"",
-                "*        ) from exc",
-                "*    execute_from_command_line(sys.argv)",
-                " ",
-                " ",
-                " if __name__ == '__main__':"
-            ],
-            "firstLineNumber": 8,
-            "path": "manage.py",
-            "comments": [
-                "dw\n\nww [[sym-text:ImportError(49a72fa0-3fcc-4739-b68b-f8df9d6316b0)]] ded\n\neded"
-            ]
-        },
-        {
             "type": "text",
             "text": "dw\n\nww [[sym-text:ImportError(49a72fa0-3fcc-4739-b68b-f8df9d6316b0)]] ded\n\neded"
         }
@@ -210,8 +187,6 @@
     "file_version": "2.0.3",
     "meta": {
         "app_version": "0.5.6-0",
-        "file_blobs": {
-            "manage.py": "a7184e8ed5b3d33075906e3d1d1c2a744bba1f8c"
-        }
+        "file_blobs": {}
     }
 }
