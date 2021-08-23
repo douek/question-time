@@ -19,28 +19,42 @@
             "text": "[[sym-text:stackpath(80a80cd4-880e-4750-843f-5e917f62ac6f)]] [[sym-text:stackpath(80a80cd4-880e-4750-843f-5e917f62ac6f)]] [[sym-text:title(c6b378ba-6b29-4b78-8897-980100ad2717)]]"
         },
         {
+            "type": "text",
+            "text": "*   [[sym-text:endblock((4e3388cc-3b76-4770-98bc-a89ee31bc6bc)]]\n    \n*   [[sym-text:block((bc3e60b9-013a-4f42-a0d4-79aef8611061)]]"
+        },
+        {
+            "type": "text",
+            "text": "[[sym-text:question(52647a8a-a2a8-4590-8a82-2f10eb6b033e)]]."
+        },
+        {
+            "type": "text",
+            "text": "[[sym-text:question(52647a8a-a2a8-4590-8a82-2f10eb6b033e)]] [[sym-text:question(52647a8a-a2a8-4590-8a82-2f10eb6b033e)]]"
+        },
+        {
+            "type": "text",
+            "text": "ede\n\n[[sym-text:execute_from_command_line(cebef847-d844-4110-a0d5-931040f45455)]] eff\n\ne"
+        },
+        {
             "type": "snippet",
             "lines": [
-                " <html>",
-                "     <head>",
-                "         <title> Question Time </title>",
-                "*        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\" integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\" crossorigin=\"anonymous\">",
-                "*        <link href=\"https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap\" rel=\"stylesheet\">",
-                "*        {% block style %}",
-                "*        {% endblock %}",
-                "*    </head>",
-                "*    <body>",
-                "*        {% block content%}",
-                "*        {% endblock %}",
-                "*        {% block js%}",
-                "*        {% endblock %}",
-                "*    </body>",
-                "*</html>"
+                "     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'QuestionTime.settings')",
+                "     try:",
+                "         from django.core.management import execute_from_command_line",
+                "*    except ImportError as exc:",
+                "*        raise ImportError(",
+                "*            \"Couldn't import Django. Are you sure it's installed and \"",
+                "*            \"available on your PYTHONPATH environment variable? Did you \"",
+                "*            \"forget to activate a virtual environment?\"",
+                "*        ) from exc",
+                "*    execute_from_command_line(sys.argv)",
+                " ",
+                " ",
+                " if __name__ == '__main__':"
             ],
-            "firstLineNumber": 2,
-            "path": "templates/base.html",
+            "firstLineNumber": 8,
+            "path": "manage.py",
             "comments": [
-                "*   [[sym-text:endblock(4e3388cc-3b76-4770-98bc-a89ee31bc6bc)]]\n    \n*   [[sym-text:block(bc3e60b9-013a-4f42-a0d4-79aef8611061)]]"
+                ""
             ]
         }
     ],
@@ -68,7 +82,7 @@
                 "start": 7,
                 "end": 7
             },
-            "fileBlob": "",
+            "fileBlob": "a7184e8ed5b3d33075906e3d1d1c2a744bba1f8c",
             "type": "generic_text"
         },
         "c29b4754-4bea-472a-a27e-806ba5658bff": {
@@ -81,7 +95,7 @@
                 "start": 5,
                 "end": 5
             },
-            "fileBlob": "",
+            "fileBlob": "a7184e8ed5b3d33075906e3d1d1c2a744bba1f8c",
             "type": "generic_text"
         },
         "80948b0d-a55e-41d2-b176-80fffb1003ca": {
@@ -162,30 +176,17 @@
             "fileBlob": "916cef285db9779e8ed9f9bbc994c55bb0299c69",
             "type": "generic_text"
         },
-        "4e3388cc-3b76-4770-98bc-a89ee31bc6bc": {
-            "symbol": "4e3388cc-3b76-4770-98bc-a89ee31bc6bc",
-            "path": "templates/base.html",
-            "text": "endblock",
-            "lineNumber": 8,
-            "lineData": "        {% endblock %}",
+        "52647a8a-a2a8-4590-8a82-2f10eb6b033e": {
+            "symbol": "52647a8a-a2a8-4590-8a82-2f10eb6b033e",
+            "path": "README.md",
+            "text": "question",
+            "lineNumber": 1,
+            "lineData": "# question-time",
             "wordIndex": {
-                "start": 4,
-                "end": 4
+                "start": 2,
+                "end": 2
             },
-            "fileBlob": "916cef285db9779e8ed9f9bbc994c55bb0299c69",
-            "type": "generic_text"
-        },
-        "bc3e60b9-013a-4f42-a0d4-79aef8611061": {
-            "symbol": "bc3e60b9-013a-4f42-a0d4-79aef8611061",
-            "path": "templates/base.html",
-            "text": "block",
-            "lineNumber": 13,
-            "lineData": "        {% block js%}",
-            "wordIndex": {
-                "start": 4,
-                "end": 4
-            },
-            "fileBlob": "916cef285db9779e8ed9f9bbc994c55bb0299c69",
+            "fileBlob": "",
             "type": "generic_text"
         }
     },
@@ -193,7 +194,7 @@
     "meta": {
         "app_version": "0.5.6-0",
         "file_blobs": {
-            "templates/base.html": "916cef285db9779e8ed9f9bbc994c55bb0299c69"
+            "manage.py": "a7184e8ed5b3d33075906e3d1d1c2a744bba1f8c"
         }
     }
 }
