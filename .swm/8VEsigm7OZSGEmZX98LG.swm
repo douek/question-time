@@ -1,0 +1,30 @@
+{
+    "id": "8VEsigm7OZSGEmZX98LG",
+    "name": "test2",
+    "content": [
+        {
+            "type": "text",
+            "text": "[[sym-text:UserDisplaySerializer(597c44d6-c1ef-4c7d-84c8-29fb331ada9e)]]"
+        }
+    ],
+    "symbols": {
+        "597c44d6-c1ef-4c7d-84c8-29fb331ada9e": {
+            "symbol": "597c44d6-c1ef-4c7d-84c8-29fb331ada9e",
+            "path": "users/api/serializers.py",
+            "text": "UserDisplaySerializer",
+            "lineNumber": 5,
+            "lineData": "class UserDisplaySerializer(serializers.ModelSerializer):",
+            "wordIndex": {
+                "start": 2,
+                "end": 2
+            },
+            "fileBlob": "",
+            "type": "generic_text"
+        }
+    },
+    "file_version": "2.0.3",
+    "meta": {
+        "app_version": "0.5.6-0",
+        "file_blobs": {}
+    }
+}
