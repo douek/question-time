@@ -17,10 +17,6 @@
         {
             "type": "text",
             "text": "[[sym-text:stackpath(80a80cd4-880e-4750-843f-5e917f62ac6f)]] [[sym-text:stackpath(80a80cd4-880e-4750-843f-5e917f62ac6f)]] [[sym-text:title(c6b378ba-6b29-4b78-8897-980100ad2717)]]"
-        },
-        {
-            "type": "text",
-            "text": "[[sym-text:DEBUG(46bc1d1c-bdd5-4cea-b1fd-43d7014f2da9)]]"
         }
     ],
     "symbols": {
@@ -139,19 +135,6 @@
                 "end": 2
             },
             "fileBlob": "916cef285db9779e8ed9f9bbc994c55bb0299c69",
-            "type": "generic_text"
-        },
-        "46bc1d1c-bdd5-4cea-b1fd-43d7014f2da9": {
-            "symbol": "46bc1d1c-bdd5-4cea-b1fd-43d7014f2da9",
-            "path": "QuestionTime/settings.py",
-            "text": "DEBUG",
-            "lineNumber": 26,
-            "lineData": "DEBUG = True",
-            "wordIndex": {
-                "start": 0,
-                "end": 0
-            },
-            "fileBlob": "",
             "type": "generic_text"
         }
     },
