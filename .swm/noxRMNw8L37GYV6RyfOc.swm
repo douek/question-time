@@ -8,7 +8,7 @@
         },
         {
             "type": "text",
-            "text": "[[sym-text:setdefault(c29b4754-4bea-472a-a27e-806ba5658bff)]] [[sym-text:question-time(80948b0d-a55e-41d2-b176-80fffb1003ca)]]"
+            "text": "[[sym-text:setdefault(c29b4754-4bea-472a-a27e-806ba5658bff)]] [[sym-text:question-time(80948b0d-a55e-41d2-b176-80fffb1003ca)]][[sym-text:border(95923062-2680-496e-8da3-cc4ac4b0aad3)]]"
         },
         {
             "type": "snippet",
@@ -85,6 +85,19 @@
                 "end": 4
             },
             "fileBlob": "",
+            "type": "generic_text"
+        },
+        "95923062-2680-496e-8da3-cc4ac4b0aad3": {
+            "symbol": "95923062-2680-496e-8da3-cc4ac4b0aad3",
+            "path": "templates/auth_layout.html",
+            "text": "border",
+            "lineNumber": 11,
+            "lineData": "        border: 3px solid lightgray;",
+            "wordIndex": {
+                "start": 1,
+                "end": 1
+            },
+            "fileBlob": "f8af3bf2b0c0674db3924edca594f6adbceabbd1",
             "type": "generic_text"
         }
     },
