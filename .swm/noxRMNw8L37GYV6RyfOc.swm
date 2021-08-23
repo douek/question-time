@@ -5,6 +5,10 @@
         {
             "type": "text",
             "text": "[[sym-text:idea(6ae9a266-cb5d-47d3-ad35-45c1e6754913)]] [[sym-text:management(fddd67e0-452d-4d81-977c-ac96e81f28c0)]]"
+        },
+        {
+            "type": "text",
+            "text": "[[sym-text:setdefault(c29b4754-4bea-472a-a27e-806ba5658bff)]] [[sym-text:question-time(80948b0d-a55e-41d2-b176-80fffb1003ca)]]"
         }
     ],
     "symbols": {
@@ -30,6 +34,32 @@
             "wordIndex": {
                 "start": 7,
                 "end": 7
+            },
+            "fileBlob": "",
+            "type": "generic_text"
+        },
+        "c29b4754-4bea-472a-a27e-806ba5658bff": {
+            "symbol": "c29b4754-4bea-472a-a27e-806ba5658bff",
+            "path": "manage.py",
+            "text": "setdefault",
+            "lineNumber": 8,
+            "lineData": "    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'QuestionTime.settings')",
+            "wordIndex": {
+                "start": 5,
+                "end": 5
+            },
+            "fileBlob": "",
+            "type": "generic_text"
+        },
+        "80948b0d-a55e-41d2-b176-80fffb1003ca": {
+            "symbol": "80948b0d-a55e-41d2-b176-80fffb1003ca",
+            "path": "README.md",
+            "text": "question-time",
+            "lineNumber": 1,
+            "lineData": "# question-time",
+            "wordIndex": {
+                "start": 2,
+                "end": 4
             },
             "fileBlob": "",
             "type": "generic_text"
