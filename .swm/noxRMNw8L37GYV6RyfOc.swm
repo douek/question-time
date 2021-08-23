@@ -13,6 +13,35 @@
         {
             "type": "text",
             "text": "*   [[sym-text:div(e2927b0d-1920-43c1-8cd5-efbe8a2e50f7)]]\n    \n*   [[sym-text:login-form-container(c2ac91f5-42a0-41ef-b434-253759ad4ba4)]]\n    \n\n[[sym-text:submit((346fc59f-c7bb-408d-bd56-120061f896b0)]]question-time[[sym-text:border(95923062-2680-496e-8da3-cc4ac4b0aad3)]] question-time[[sym-text:border(95923062-2680-496e-8da3-cc4ac4b0aad3)]]question-time[[sym-text:border(95923062-2680-496e-8da3-cc4ac4b0aad3)]]"
+        },
+        {
+            "type": "text",
+            "text": "[[sym-text:stackpath(80a80cd4-880e-4750-843f-5e917f62ac6f)]] [[sym-text:stackpath(80a80cd4-880e-4750-843f-5e917f62ac6f)]] [[sym-text:title(c6b378ba-6b29-4b78-8897-980100ad2717)]]"
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                " <html>",
+                "     <head>",
+                "         <title> Question Time </title>",
+                "*        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\" integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\" crossorigin=\"anonymous\">",
+                "*        <link href=\"https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap\" rel=\"stylesheet\">",
+                "*        {% block style %}",
+                "*        {% endblock %}",
+                "*    </head>",
+                "*    <body>",
+                "*        {% block content%}",
+                "*        {% endblock %}",
+                "*        {% block js%}",
+                "*        {% endblock %}",
+                "*    </body>",
+                "*</html>"
+            ],
+            "firstLineNumber": 2,
+            "path": "templates/base.html",
+            "comments": [
+                "\\` `[[sym-text:stackpath(80a80cd4-880e-4750-843f-5e917f62ac6f)]]` [[sym-text:title(c6b378ba-6b29-4b78-8897-980100ad2717)]]"
+            ]
         }
     ],
     "symbols": {
@@ -106,11 +135,39 @@
             },
             "fileBlob": "74aff3fff843f36daa070eb4c29ec9a0c6d6126e",
             "type": "generic_text"
+        },
+        "80a80cd4-880e-4750-843f-5e917f62ac6f": {
+            "symbol": "80a80cd4-880e-4750-843f-5e917f62ac6f",
+            "path": "templates/base.html",
+            "text": "stackpath",
+            "lineNumber": 5,
+            "lineData": "        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css\" integrity=\"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk\" crossorigin=\"anonymous\">",
+            "wordIndex": {
+                "start": 15,
+                "end": 15
+            },
+            "fileBlob": "916cef285db9779e8ed9f9bbc994c55bb0299c69",
+            "type": "generic_text"
+        },
+        "c6b378ba-6b29-4b78-8897-980100ad2717": {
+            "symbol": "c6b378ba-6b29-4b78-8897-980100ad2717",
+            "path": "templates/base.html",
+            "text": "title",
+            "lineNumber": 4,
+            "lineData": "        <title> Question Time </title>",
+            "wordIndex": {
+                "start": 2,
+                "end": 2
+            },
+            "fileBlob": "916cef285db9779e8ed9f9bbc994c55bb0299c69",
+            "type": "generic_text"
         }
     },
     "file_version": "2.0.3",
     "meta": {
         "app_version": "0.5.6-0",
-        "file_blobs": {}
+        "file_blobs": {
+            "templates/base.html": "916cef285db9779e8ed9f9bbc994c55bb0299c69"
+        }
     }
 }
