@@ -54,8 +54,12 @@
             "firstLineNumber": 8,
             "path": "manage.py",
             "comments": [
-                ""
+                "dw\n\nww [[sym-text:ImportError(49a72fa0-3fcc-4739-b68b-f8df9d6316b0)]] ded\n\neded"
             ]
+        },
+        {
+            "type": "text",
+            "text": "dw\n\nww [[sym-text:ImportError(49a72fa0-3fcc-4739-b68b-f8df9d6316b0)]] ded\n\neded"
         }
     ],
     "symbols": {
@@ -187,6 +191,19 @@
                 "end": 2
             },
             "fileBlob": "",
+            "type": "generic_text"
+        },
+        "49a72fa0-3fcc-4739-b68b-f8df9d6316b0": {
+            "symbol": "49a72fa0-3fcc-4739-b68b-f8df9d6316b0",
+            "path": "manage.py",
+            "text": "ImportError",
+            "lineNumber": 12,
+            "lineData": "        raise ImportError(",
+            "wordIndex": {
+                "start": 3,
+                "end": 3
+            },
+            "fileBlob": "a7184e8ed5b3d33075906e3d1d1c2a744bba1f8c",
             "type": "generic_text"
         }
     },
