@@ -12,30 +12,7 @@
         },
         {
             "type": "text",
-            "text": "*   [[sym-text:div(e2927b0d-1920-43c1-8cd5-efbe8a2e50f7)]]\n    \n*   [[sym-text:login-form-container(c2ac91f5-42a0-41ef-b434-253759ad4ba4)]]"
-        },
-        {
-            "type": "snippet",
-            "lines": [
-                " {% load crispy_forms_tags %}",
-                " ",
-                " {% block auth %}",
-                "*<h1>QuestionTime</h1>",
-                "*<p class=\"lead text-muted\">Q and A</p>",
-                "*<div class=\"login-form-container\">",
-                "*    <form method=\"POST\">",
-                "*        {% csrf_token %}",
-                "*        {{ form|crispy }}",
-                "*        <button type=\"submit\" class=\"btn btn-sm btn-outline-primary\">Login</button>",
-                "*    </form>",
-                "*    <p class=\"mt-2\">Or <a href=\"{% url 'django_registration_register' %}\">Create an Account</a></p>",
-                "*</div>",
-                "*",
-                "*{% endblock %}"
-            ],
-            "firstLineNumber": 2,
-            "path": "templates/registration/login.html",
-            "comments": []
+            "text": "*   [[sym-text:div(e2927b0d-1920-43c1-8cd5-efbe8a2e50f7)]]\n    \n*   [[sym-text:login-form-container(c2ac91f5-42a0-41ef-b434-253759ad4ba4)]]\n    \n\n[[sym-text:submit(346fc59f-c7bb-408d-bd56-120061f896b0)]]"
         }
     ],
     "symbols": {
@@ -134,8 +111,6 @@
     "file_version": "2.0.3",
     "meta": {
         "app_version": "0.5.6-0",
-        "file_blobs": {
-            "templates/registration/login.html": "74aff3fff843f36daa070eb4c29ec9a0c6d6126e"
-        }
+        "file_blobs": {}
     }
 }
