@@ -9,6 +9,33 @@
         {
             "type": "text",
             "text": "[[sym-text:setdefault(c29b4754-4bea-472a-a27e-806ba5658bff)]] [[sym-text:question-time(80948b0d-a55e-41d2-b176-80fffb1003ca)]][[sym-text:border(95923062-2680-496e-8da3-cc4ac4b0aad3)]]"
+        },
+        {
+            "type": "text",
+            "text": "*   [[sym-text:div(e2927b0d-1920-43c1-8cd5-efbe8a2e50f7)]]\n    \n*   [[sym-text:login-form-container(c2ac91f5-42a0-41ef-b434-253759ad4ba4)]]"
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                " {% load crispy_forms_tags %}",
+                " ",
+                " {% block auth %}",
+                "*<h1>QuestionTime</h1>",
+                "*<p class=\"lead text-muted\">Q and A</p>",
+                "*<div class=\"login-form-container\">",
+                "*    <form method=\"POST\">",
+                "*        {% csrf_token %}",
+                "*        {{ form|crispy }}",
+                "*        <button type=\"submit\" class=\"btn btn-sm btn-outline-primary\">Login</button>",
+                "*    </form>",
+                "*    <p class=\"mt-2\">Or <a href=\"{% url 'django_registration_register' %}\">Create an Account</a></p>",
+                "*</div>",
+                "*",
+                "*{% endblock %}"
+            ],
+            "firstLineNumber": 2,
+            "path": "templates/registration/login.html",
+            "comments": []
         }
     ],
     "symbols": {
@@ -76,11 +103,39 @@
             },
             "fileBlob": "f8af3bf2b0c0674db3924edca594f6adbceabbd1",
             "type": "generic_text"
+        },
+        "e2927b0d-1920-43c1-8cd5-efbe8a2e50f7": {
+            "symbol": "e2927b0d-1920-43c1-8cd5-efbe8a2e50f7",
+            "path": "templates/registration/login.html",
+            "text": "div",
+            "lineNumber": 7,
+            "lineData": "<div class=\"login-form-container\">",
+            "wordIndex": {
+                "start": 1,
+                "end": 1
+            },
+            "fileBlob": "74aff3fff843f36daa070eb4c29ec9a0c6d6126e",
+            "type": "generic_text"
+        },
+        "c2ac91f5-42a0-41ef-b434-253759ad4ba4": {
+            "symbol": "c2ac91f5-42a0-41ef-b434-253759ad4ba4",
+            "path": "templates/registration/login.html",
+            "text": "login-form-container",
+            "lineNumber": 7,
+            "lineData": "<div class=\"login-form-container\">",
+            "wordIndex": {
+                "start": 6,
+                "end": 10
+            },
+            "fileBlob": "74aff3fff843f36daa070eb4c29ec9a0c6d6126e",
+            "type": "generic_text"
         }
     },
     "file_version": "2.0.3",
     "meta": {
         "app_version": "0.5.6-0",
-        "file_blobs": {}
+        "file_blobs": {
+            "templates/registration/login.html": "74aff3fff843f36daa070eb4c29ec9a0c6d6126e"
+        }
     }
 }
