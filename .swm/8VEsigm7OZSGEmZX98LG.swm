@@ -5,6 +5,34 @@
         {
             "type": "text",
             "text": "[[sym-text:UserDisplaySerializer(597c44d6-c1ef-4c7d-84c8-29fb331ada9e)]]"
+        },
+        {
+            "type": "text",
+            "text": "[[sym-text:get_asgi_application(e581320f-eec1-460e-811b-c85e30810eb1)]]"
+        },
+        {
+            "type": "snippet",
+            "lines": [
+                " \"\"\"",
+                " ",
+                " import os",
+                "*",
+                "*from django.core.asgi import get_asgi_application",
+                "*",
+                "*os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'QuestionTime.settings')",
+                "*",
+                "*application = get_asgi_application()",
+                "*"
+            ],
+            "firstLineNumber": 8,
+            "path": "QuestionTime/asgi.py",
+            "comments": [
+                ""
+            ]
+        },
+        {
+            "type": "text",
+            "text": "[[sym-text:application(15ee0f2a-22d8-4e3d-be61-75967cb85fc1)]]"
         }
     ],
     "symbols": {
@@ -25,6 +53,8 @@
     "file_version": "2.0.3",
     "meta": {
         "app_version": "0.5.6-0",
-        "file_blobs": {}
+        "file_blobs": {
+            "QuestionTime/asgi.py": "f06b261b0bee07990b1b3c3038109c751fbe9922"
+        }
     }
 }
