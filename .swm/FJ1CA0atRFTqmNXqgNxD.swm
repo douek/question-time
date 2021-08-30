@@ -19,7 +19,9 @@
             ],
             "firstLineNumber": 7,
             "path": "QuestionTime/asgi.py",
-            "comments": []
+            "comments": [
+                "text"
+            ]
         },
         {
             "type": "snippet",
