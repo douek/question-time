@@ -1,0 +1,29 @@
+{
+    "id": "Q4z1N",
+    "name": "Test links",
+    "content": [
+        {
+            "type": "text",
+            "text": "[[sym-link:(775dc8ac-6d3d-4f63-a3bd-6000d153d648)dvd]] [[sym-link:(12e2bc78-e06c-4fa2-85ee-19104d2e1724)Test creating PR to Master]]"
+        }
+    ],
+    "symbols": {
+        "775dc8ac-6d3d-4f63-a3bd-6000d153d648": {
+            "type": "link",
+            "swimmId": "2pEqk",
+            "repoId": "Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=",
+            "text": "dvd"
+        },
+        "12e2bc78-e06c-4fa2-85ee-19104d2e1724": {
+            "type": "link",
+            "swimmId": "G6KCXy8MhmGZxXvV8mMl",
+            "repoId": "U0sVB7lC9at5XPOW1TBW",
+            "text": "Test creating PR to Master"
+        }
+    },
+    "file_version": "2.0.3",
+    "meta": {
+        "app_version": "0.5.8-0",
+        "file_blobs": {}
+    }
+}
