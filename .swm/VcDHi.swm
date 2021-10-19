@@ -1,0 +1,49 @@
+{
+    "name": "No SWMD PL",
+    "id": "VcDHi",
+    "meta": {
+        "app_version": "0.6.2-0",
+        "file_blobs": {}
+    },
+    "content": [
+        {
+            "type": "text",
+            "text": "<!-- Intro - Do not remove this comment --> \n test description"
+        },
+        {
+            "type": "text",
+            "text": "<!-- Steps - Do not remove this comment --> \n1. [[sym-link:(4d54d67f-d626-4ee1-a369-911b4fe02e0b)dvd33]] \n2. [swimm.io](swimm.io) \n3. [[sym-link:(84a4e208-5cca-446e-b176-f3e8a863faaf)Test SWMD Autosync hi]] \n4. [[sym-link:(e52fdaea-5633-491a-9120-edddd0dd0501)Test]] \n5. [[sym-link:(fdd7b95f-8e9b-4d5e-b087-3faa73fedd07)New Doc push to branch test]] \n"
+        }
+    ],
+    "symbols": {
+        "4d54d67f-d626-4ee1-a369-911b4fe02e0b": {
+            "type": "link",
+            "swimmId": "2pEqk",
+            "repoId": "Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=",
+            "text": "dvd33",
+            "applicability": "verified"
+        },
+        "84a4e208-5cca-446e-b176-f3e8a863faaf": {
+            "type": "link",
+            "swimmId": "Jy_Wg",
+            "repoId": "Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=",
+            "text": "Test SWMD Autosync hi",
+            "applicability": "verified"
+        },
+        "e52fdaea-5633-491a-9120-edddd0dd0501": {
+            "type": "link",
+            "swimmId": "Ck52llPoliwBnM0zougM",
+            "repoId": "Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=",
+            "text": "Test",
+            "applicability": "verified"
+        },
+        "fdd7b95f-8e9b-4d5e-b087-3faa73fedd07": {
+            "type": "link",
+            "swimmId": "5gprK",
+            "repoId": "U0sVB7lC9at5XPOW1TBW",
+            "text": "New Doc push to branch test",
+            "applicability": "verified"
+        }
+    },
+    "file_version": "2.0.3"
+}
