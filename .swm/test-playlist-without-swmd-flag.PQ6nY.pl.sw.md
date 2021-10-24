@@ -17,6 +17,7 @@ save should work5
 4. [New Doc push to branch test](new-doc-push-to-branch-test.5gprK.sw.md) 
 5. [Doc to master](doc-to-master.FJ1CA0atRFTqmNXqgNxD.sw.md) 
 6. [swimm](swimm.io) 
+7. [Another Doc with a long long long name ❤️](http://localhost:5000/#/repos/Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=/docs/9yzmm5UcTxNYLjrG8XAF) 
 
 
 <br/>
