@@ -15,12 +15,11 @@ Writing some intro
 2. [Test - Can read new Doc after creation](test-can-read-new-doc-after-creation.rpEX5.sw.md)
 3. [dvd33](https://swimm-web-app.web.app/repos/Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=/docs/2pEqk)
 4. [Test SWMD Autosync hi](https://swimm-web-app.web.app/repos/Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=/docs/Jy_Wg)
-5. [Testing links](https://swimm-web-app.web.app/repos/Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=/docs/mEW6zsJ9foufVJ4Tl3hd)
-6. [https://swimm.io](https://swimm.io)
-7. [video](https://www.youtube.com/watch?v=JIGZfm9NAQA)
-8. [Einor Test](https://swimm-web-app.web.app/repos/Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=/playlists/8gMUg)
-9. [bla bla link cross exercise](bla-bla-link-cross-exercise.Zifra.pl.sw.md)
-10. [the md](/README.md)
+5. [https://swimm.io](https://swimm.io)
+6. [video](https://www.youtube.com/watch?v=JIGZfm9NAQA)
+7. [Einor Test](https://swimm-web-app.web.app/repos/Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=/playlists/8gMUg)
+8. [bla bla link cross exercise](bla-bla-link-cross-exercise.Zifra.pl.sw.md)
+9. [the md](/README.md)
 
 
 <br/>
