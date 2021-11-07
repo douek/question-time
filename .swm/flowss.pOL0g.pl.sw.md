@@ -5,6 +5,11 @@ file_version: 1.0.2
 app_version: 0.6.4-0
 ---
 
+<!-- Intro - Do not remove this comment -->
+Writing some intro
+
+<br/>
+
 <!-- Steps - Do not remove this comment -->
 1. [New Doc push to branch test](new-doc-push-to-branch-test.5gprK.sw.md)
 2. [Test - Can read new Doc after creation](test-can-read-new-doc-after-creation.rpEX5.sw.md)
@@ -17,6 +22,11 @@ app_version: 0.6.4-0
 9. [bla bla link cross exercise](bla-bla-link-cross-exercise.Zifra.pl.sw.md)
 10. [the md](/README.md)
 
+
+<br/>
+
+<!-- Summary - Do not remove this comment -->
+some summary
 
 <br/>
 
