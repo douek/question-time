@@ -13,13 +13,12 @@ Writing some intro
 <!-- Steps - Do not remove this comment -->
 1. [New Doc push to branch test](new-doc-push-to-branch-test.5gprK.sw.md)
 2. [Test - Can read new Doc after creation](test-can-read-new-doc-after-creation.rpEX5.sw.md)
-3. [dvd33](https://swimm-web-app.web.app/repos/Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=/docs/2pEqk)
-4. [Test SWMD Autosync hi](https://swimm-web-app.web.app/repos/Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=/docs/Jy_Wg)
-5. [https://swimm.io](https://swimm.io)
-6. [video](https://www.youtube.com/watch?v=JIGZfm9NAQA)
-7. [Einor Test](https://swimm-web-app.web.app/repos/Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=/playlists/8gMUg)
-8. [bla bla link cross exercise](bla-bla-link-cross-exercise.Zifra.pl.sw.md)
-9. [the md](/README.md)
+3. [Test SWMD Autosync hi](https://swimm-web-app.web.app/repos/Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=/docs/Jy_Wg)
+4. [https://swimm.io](https://swimm.io)
+5. [video](https://www.youtube.com/watch?v=JIGZfm9NAQA)
+6. [Einor Test](https://swimm-web-app.web.app/repos/Z2l0aHViJTNBJTNBc3ItZXh0ZW5zaW9uJTNBJTNBZG91ZWs=/playlists/8gMUg)
+7. [bla bla link cross exercise](bla-bla-link-cross-exercise.Zifra.pl.sw.md)
+8. [the md](/README.md)
 
 
 <br/>
